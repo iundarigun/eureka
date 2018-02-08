@@ -19,7 +19,7 @@ apply plugin: 'io.spring.dependency-management'
 
 group = 'br.com.devcave.springcloud.eureka'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = 9
+sourceCompatibility = 1.8
 
 repositories {
 	mavenCentral()
@@ -29,20 +29,13 @@ repositories {
 
 
 ext {
-	springCloudVersion = 'Finchley.M5'
-	swaggerVersion = '2.8.0'
+	springCloudVersion = 'Finchley.BUILD-SNAPSHOT'
 	jaxbVersion = '2.3.0'
 }
 
 dependencies {
-    compile "org.springframework.boot:spring-boot-starter-web"
-    compile "org.springframework.boot:spring-boot-starter-actuator"
-    compile "org.springframework.cloud:spring-cloud-starter-openfeign"
-	compile "org.springframework.cloud:spring-cloud-starter-netflix-eureka-client"
-//	compile "org.springframework.cloud:spring-cloud-starter-netflix-ribbon"
-	compile "io.springfox:springfox-swagger2:${swaggerVersion}"
-	compile "io.springfox:springfox-swagger-ui:${swaggerVersion}"
-	compileOnly "org.projectlombok:lombok"
+	compile "org.springframework.boot:spring-boot-starter-actuator"
+	compile "org.springframework.cloud:spring-cloud-starter-netflix-eureka-server"
 	compile "javax.xml.bind:jaxb-api:${jaxbVersion}"
 }
 
