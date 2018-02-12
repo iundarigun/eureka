@@ -5,5 +5,10 @@ spring:
     name: api-client
 eureka:
   client:
+#    region: zonaX
+#    availability-zones:
+#      zonaX: 'urlZonaX1,urlZonaX2'
     serviceUrl:
-      defaultZone: http://localhost:9090/eureka/
+      defaultZone: http://localhost:9090/eureka/,http://localhost:9091/eureka/
+#      urlZonaX1: http://localhost:9091/eureka/
+#      urlZonaX2: http://localhost:9090/eureka/
