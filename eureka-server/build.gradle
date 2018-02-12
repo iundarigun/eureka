@@ -19,7 +19,7 @@ apply plugin: 'io.spring.dependency-management'
 
 group = 'br.com.devcave.springcloud.eureka'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = 1.8
+sourceCompatibility = 9
 
 repositories {
 	mavenCentral()
@@ -29,7 +29,7 @@ repositories {
 
 
 ext {
-	springCloudVersion = 'Finchley.BUILD-SNAPSHOT'
+	springCloudVersion = 'Finchley.M6'
 	jaxbVersion = '2.3.0'
 }
 
